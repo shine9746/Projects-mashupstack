@@ -1,0 +1,260 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing : border-box;
+    min-height: 100%;
+}
+body{
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+    color: rgba(71, 69, 69, 0.781);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+
+}
+
+.todo-input{
+    display: inline;
+    border: none;
+    padding: 0.5rem;
+}
+
+.todo-input:focus{
+    outline: none;
+}
+
+header,form{
+    min-height:20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+.todo-button {
+    color:#464343be;
+    background:white;
+    cursor: pointer;
+    transition: all .6s ease;
+    border: none;
+    padding: 0.5rem;
+}
+
+.todo-button:hover {
+    color: rgb(250, 250, 250);
+    background-color: rgba(0, 92, 128, 0.678);
+    outline:none;
+
+}
+.todo-button:focus{
+    outline: none;
+}
+
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo-list {
+    min-width: 30%;
+    list-style: none;
+}
+
+.todo {
+   
+    margin: 5px;
+    background:linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter:blur(10px);
+    -webkit-backdrop-filter: blur(50px);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+.todo li {
+    flex: 1;
+    
+}
+.complete-btn {
+    background: #ffffff;
+    color: rgb(30, 127, 172);
+    border: none;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.complete-btn:hover{
+    outline: none;
+    background-color: rgba(36, 82, 104, 0.267);
+    color: white;
+    transition: all 0.5s ease;
+
+}
+.complete-btn:focus{
+    outline: none;
+
+}
+
+
+.trash-btn {
+    background-color: rgba(36, 82, 104, 0.267);
+   
+    color: white;
+    border: none;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.trash-btn:hover{
+    outline: none;
+    background: #ff0a02;
+    color:  rgb(240, 233, 233);
+    transition: all 1s ease;
+}
+.trash-btn:focus{
+    outline: none;
+}
+
+
+.todo-item {
+    padding: 0rem 0.5rem;
+}	
+
+
+.fa-trash, .fa-check {
+    pointer-events: none; /*check and trash correction*/
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.fall {
+	transform: translateY(8rem)rotateZ(20deg);
+	opacity: 0;
+}
+
+
+
+/*Sorting todo's*/
+select {
+    color:#464343be;
+    font-size:16px;
+    width: 110px;
+    background-color: white;
+    font-family :"Poppins", sans-serif;
+    cursor: pointer;
+    padding: 3px;
+    border: none;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+}
+
+
+
+.select {
+    margin: 9px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.select:hover::after {
+    content: "\25BC";
+    position: absolute;
+    background-color: #4f6c99;
+    color: white;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    pointer-events: none;
+    transition: all 0.5s ease;
+}
+
+
+
+
+/*Search styling*/
+.todo-search-input {
+    padding:3px 16px 3px 16px;
+    font-size:16px;
+    font-family :"Poppins", sans-serif;
+    background: white;
+    border:none;
+    width: 100px;
+    margin-right: 10px;
+  
+     
+}
+
+.todo-search-input:focus{
+    outline: none;
+   
+}
+
+.todo-search{
+    background-color: white;
+    border: none;
+    padding: 3px;
+}
+
+.todo-search:hover{
+    background-color: #4f6c99;
+    color: white;
+    cursor: pointer;
+}
+
+.todo-search:focus{
+    outline: none;
+}
+
+
+
+/*heading text transition*/
+.heading{
+    font-weight: lighter;
+    opacity: 65%;
+    font-size: 35px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+
+    
+}
+
+.heading .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.1em;
+    padding-right: 0.05em;
+    padding-bottom: 0.15em;
+  }
+  
+  .heading .line {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 3px;
+    background-color: #fff;
+    transform-origin: 0 50%;
+  }
+  
+  .heading .line1 { 
+    top: 0; 
+    left: 0;
+  }
+  
+  .heading .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
