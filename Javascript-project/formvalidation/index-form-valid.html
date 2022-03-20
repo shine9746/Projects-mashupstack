@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<hmtl>
+    <head>
+        <title>Login</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js" integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg==" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./formstyle.css">
+        <script src="form-valid-js.js"></script>
+
+    </head>
+
+
+    <body>
+
+        <div class="container">
+
+          
+
+                      <form method="post" onsubmit="formvalidation(event)">
+                <h2>Regitration</h2>
+
+                <div class="row">
+                    <div class="col">
+                        <label>Fullname</label>
+                        <input class="form-control" type="text" name="fullname" id="fullname">
+                        <div class="error" id="nameerror"></div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <label>Email Address</label>
+                        <input class="form-control" type="text" name="emailaddress"id="emailaddress">
+                        <div  class="error" id="emailerror"></div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <label>Password</label>
+                        <input class="form-control" type="password" name="password"id="password">
+                        <div class="error" id="passworderror1"></div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <label>Confirm Password</label>
+                        <input class="form-control" type="password" name="reenterpassword" id="reenterpassword">
+                        <div class="error" id="passworderror2"></div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <label>Contact number</label>
+                        <input class="form-control" type="text" name="contactnumber" id="contactnumber"placeholder="eg:+9197xxxxxxx6">
+                        <div class="error" id="contacterror"></div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col">
+                        <input class="btn" type="submit" value="Submit">
+                    </div>
+                </div>
+
+
+
+            </form>
+
+   
+
+      
+
+        </div>
+
+        
+
+           
+
+      
+     
+
+
+    </body>
+</hmtl>
